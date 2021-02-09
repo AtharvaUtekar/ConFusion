@@ -59,3 +59,14 @@
   left: 0;
   min-height: 300px;
 }
+.textblack{
+  color: black;
+}
+.alignbuttonnonsmk{
+  position: absolute;
+  margin-left: 118px;
+}
+.alignbuttonsmk{
+  position: absolute;
+  margin-left: 238px;
+}

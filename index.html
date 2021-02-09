@@ -30,8 +30,8 @@
           <li class="nav-item"> <a class="nav-link" href="/contactus.html"><span class="fa fa-address-card fa-lg"> Contact</a> </li>
         </ul>
         <span class="navbar-text">
-          <a data-toggle="modal" data-target="#loginModal">
-            <span class="fa fa-sign-in"></span> Login</a>
+          <a data-toggle="modal" data-target="#loginModal" class="btn">
+            <span class="btn fa fa-sign-in"></span> Login</a>
         </span>
       </div>
     </div>
@@ -87,8 +87,91 @@
           <img src="img/logo.png" class="img-responsive">
         </div>
         <div class="col-xs-12 col-md-2 marginform">
+          <a type="button" class="btn btn-warning btn-block" data-toggle="modal" data-target="#resModal">Reserve Table</a>
+        </div>
+        <div id="resModal" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
 
-          <a type="button" class="btn btn-warning btn-block" data-toggle="tooltip" data-html="true" title="Or Call us at <br><strong>+91 8655652125" data-placement="bottom" href="#table">Reserve Table</a>
+
+            <div class="modal-content textblack">
+              <div class="modal-header">
+                <h3 class="modal-title" >Reserve a table</h3>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                <form>
+
+                  <div class="form-group row">
+
+                    <span class="col-2">
+                      <label for="Number of Guests"> Number of Guests </label>
+                   </span>
+                    <div class="form-check-inline offset-1 ">
+                      <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2"> 1 </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2"> 2 </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2"> 3 </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2"> 4 </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2"> 5 </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2"> 6 </label>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="form-group row">
+
+                      <div class="form-check-inline">
+                        <label class="form-check-label">
+                          <span class="col-4">
+                            <label for="Section"> Section  </label>
+                          </span>
+
+                          <button type="button" class="btn btn-success align-self-center alignbuttonnonsmk">Non-smoking</button>
+                          <button type="button" class="btn btn-danger align-self-center alignbuttonsmk">Smoking</button>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <span class="col-12 col-sm-3 col-form-label">
+                        <label for="example-date-input" >Date and Time </label>
+
+                      </span>
+                      <div class="col-12 col-sm-4 form-group">
+                        <input class="form-control " type="date" value="Date" id="example-date-input">
+                      </div>
+                      <div class="col-12 col-sm-4 form-group ">
+                        <input class="form-control " type="time" value="Time" id="example-time-input">
+                      </div>
+                        </div>
+                      <div class="form-group row">
+                        <div class="col-12 col-sm-4 offset-4 marginform">
+                          <button type="submit" class="btn btn-secondary ">Cancel</button>
+                          <button type="submit" class="btn btn-primary ">Reserve</button>
+                        </div>
+                      </div>
+
+
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -131,10 +214,10 @@
             <li data-target="#mycarousel" data-slide-to="1"></li>
             <li data-target="#mycarousel" data-slide-to="2"></li>
           </ol>
-          <a class="carousel-control-prev"href="#mycarousel" role="button" data-slide="prev">
+          <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon"></span>
           </a>
-          <a class="carousel-control-next"href="#mycarousel" role="button" data-slide="next">
+          <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon"></span>
           </a>
 
@@ -143,63 +226,20 @@
     </div>
 
 
-    <!-- <div class="row row-content align-items-center">
-      <div class="col-12 col-sm-4 col-md-3 order-sm-last ">
-        <h3>Our Lipsmacking Culinary Creations</h3>
-      </div>
-      <div class="col col-sm col-md order-sm-first">
-        <div class="media">
-          <img src="img/uthappizza.png" class="d-flex mr-3 img-thumbnail align-self-center" alt="Uthappizza">
-          <div class="media-body">
-              </div>
-        </div>
-      </div>
-    </div>
 
 
-    <div class="row row-content align-items-center">
-      <div class="col-12 col-sm-4 col-md-3">
-        <h3>This Month's Promotions</h3>
-      </div>
-      <div class="col col-sm col-md">
-        <div class="media">
-          <div class="media-body">
-            <h2>Weekend Grand Buffet <span class="badge badge-danger"> NEW </span></h2>
-            <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per
-              person </p>
-          </div>
-          <img src="img/buffet.png" class="d-flex ml-3 align-self-center img-thumbnail" alt="Buffet">
-        </div>
-      </div>
-    </div>
-
-    <div class="row row-content align-items-center">
-      <div class="col-12 col-sm-4 col-md-3 order-sm-last">
-        <h3>Meet our Culinary Specialists</h3>
-      </div>
-      <div class="col col-sm col-md order-sm-first">
-        <div class="media">
-          <img src="img/Alberto.png" class="d-flex mr-3 align-self-center img-thumbnail" alt="Alberto">
-          <div class="media-body">
-            <h2 class="mt-0">Alberto Somayya</h2>
-            <h4>Executive Chef</h4>
-            <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
 
     <div class="container" id="table">
       <div class="card offset-2 col-8 form-group align-self-ceter ">
-        <h3 class="card-header bgcolor1 text-white "> Reserve a Table </h3>
-        <div class="card-body">
+        <!-- <h3 class="card-header bgcolor1 text-white "> Reserve a Table </h3>
+        <div class="card-body"> -->
           <form class="form col-12 " action="index.html" method="post">
 
-            <div class="form-group row">
+            <!-- <div class="form-group row">
 
-              <label for="Number of Guests"> Number of Guests </label>
+              <span class="col-2">
+                <label for="Number of Guests"> Number of Guests </label>
+             </span>
               <div class="form-check-inline offset-1 ">
                 <div class="form-check-inline">
                   <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
@@ -226,22 +266,42 @@
                   <label class="form-check-label" for="exampleRadios2"> 6 </label>
                 </div>
               </div>
+              </div> -->
+
+              <!-- <div class="form-group row">
+
+                <div class="form-check-inline">
+                  <label class="form-check-label">
+                    <span class="col-4">
+                      <label for="Section"> Section  </label>
+                    </span>
+
+                    <button type="button" class="btn btn-success">Non-smoking</button>
+                    <button type="button" class="btn btn-danger">Smoking</button>
+                  </label>
+                </div>
+              </div>
 
               <div class="form-group row">
-                <label for="example-date-input" class="col-12 col-sm-4 col-form-label align-self-center">Date and Time </label>
-                <div class="col-12 col-sm-4 form-group ">
+                <span class="col-12 col-sm-3 col-form-label">
+                  <label for="example-date-input" >Date and Time </label>
+
+                </span>
+                <div class="col-12 col-sm-4 form-group">
                   <input class="form-control " type="date" value="Date" id="example-date-input">
                 </div>
                 <div class="col-12 col-sm-4 form-group ">
                   <input class="form-control " type="time" value="Time" id="example-time-input">
                 </div>
+                  </div>
                 <div class="form-group row">
-                  <div class="col-12 col-sm-4 offset-6 marginform">
+                  <div class="col-12 col-sm-4 offset-4 marginform">
+                    <button type="submit" class="btn btn-secondary ">Cancel</button>
                     <button type="submit" class="btn btn-primary ">Reserve</button>
                   </div>
-                </div>
+                </div> -->
 
-              </div>
+
             </div>
         </div>
         </form>
@@ -295,11 +355,11 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
+    <!-- <script>
       $(document).ready(function() {
         $('[data-toggle="tooltip"]').tooltip();
       });
-    </script>
+    </script> -->
 
 </body>
 
