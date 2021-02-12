@@ -70,3 +70,8 @@
   position: absolute;
   margin-left: 238px;
 }
+#carouselButton{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
